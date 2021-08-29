@@ -29,7 +29,6 @@
   </head>
 
   <body>
-    <div class="container">
       <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
           <button
@@ -70,7 +69,6 @@
           </div>
         </div>
       </nav>
-    </div>
     
     <header class="jumbotron">
       <div class="container">
@@ -83,43 +81,36 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm"></div>
+          <div class="col-12 col-sm-3 align-self-center">
+            <img src="img/logo.png" class="img-fluid">
+          </div>
+          <div class="col-12 col-sm-3 align-self-center">
+            <a href="#bottom"><button type="button" class="btn btn-warning">Reserve Table</button></a>
+          </div>
         </div>
       </div>
     </header>
 
     <div class="container">
-      <div class="row row-content align-items-center">
+        <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
         <div class="col col-sm order-sm-first col-md">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-3">
-                <img
-                  class="d-flex mr-3 img-thumbnail align-self-center"
-                  src="img/uthappizza.png"
-                  alt="Uthappizza"
-                />
-              </div>
-              <div class="col-9">
-                <div class="card-body">
-                  <h2 class="mt-0">Uthappizza <span class="badge bg-danger">HOT</span><span class="badge rounded-pill bg-secondary">$4.99</span></h2>
-                  <p class="d-none d-sm-block">
-                    A unique combination of Indian Uthappam (pancake) and
+          <div class="media">
+            <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/uthappizza.png" alt="Uthappizza">
+            <div class="media-body">
+                <h2 class="mt-0">Uthappizza<span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
                     Italian pizza, topped with Cerignola olives, ripe vine
-                    cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo
-                    Paneer.
-                  </p>
-                </div>
-              </div>
+                    cherry tomatoes, Vidalia onion, Guntur chillies and
+                    Buffalo Paneer.</p>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="row row-content align-items-center">
+        </div>
+        <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 col-md-3">
           <h3>This Month's Promotions</h3>
         </div>
@@ -128,7 +119,7 @@
             <div class="row g-0">
               <div class="col-9">
                 <div class="card-body">
-                  <h2 class="mt-0">Weekend Grand Buffet</h2>
+                  <h2 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
                   <p class="d-none d-sm-block">
                     Featuring mouthwatering combinations with a choice of five different
                     salads, six enticing appetizers, six main entrees and five choicest
@@ -147,7 +138,6 @@
           </div>
         </div>
       </div>
-
       <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
           <h3>Meet our Culinary Specialists</h3>
@@ -178,8 +168,72 @@
         </div>
       </div>
     </div>
+    </div>
+    
+    <div class="container">
+      <div class="row row-content">
+        <div class="col-12 col-md-9 offset-1">
+          <div class="card">
+            <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+            <div class="card-body">
+                  <form>
+                    <div class="form-group row">
+                      <label for="numGuest" class="col-md-2 col-form-label col-form-label-sm"
+                      >Number of Guest</label>
+                      <div class="col-md-10">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          <label class="form-check-label" for="inlineRadio1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                          <label class="form-check-label" for="inlineRadio2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                          <label class="form-check-label" for="inlineRadio3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                          <label class="form-check-label" for="inlineRadio4">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                          <label class="form-check-label" for="inlineRadio5">5</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                          <label class="form-check-label" for="inlineRadio6">6</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Datetime" class="col-12 col-md-2 col-form-label col-form-label-sm"
+                      >Date and Time</label>
+                      <div class="col-12 col-md-4">
+                        <input type="date" class="form-control" placeholder="Date">
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <input type="time" class="form-control" placeholder="Time">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-2"></div>
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
 
-    <footer class="footer">
+    <footer class="footer" id="bottom">
       <div class="container">
         <div class="row">
           <div class="col-4 offset-1 col-sm-2">
