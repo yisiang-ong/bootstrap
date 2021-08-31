@@ -67,13 +67,12 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
-              <span class="fa fa-sign-in"></span> Login</a
-            >
+            <a id="loginbtn"><span class="fa fa-sign-in"></span> Login</a>
           </span>
         </div>
       </div>
     </nav>
+
     <div id="loginModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="content">
         <!-- Modal content-->
@@ -165,8 +164,7 @@
               ><button
                 type="button"
                 class="btn btn-block nav-link btn-warning"
-                data-toggle="modal"
-                data-target="#reserveModal"
+                id="reservebtn"
               >
                 Reserve Table
               </button></a
@@ -359,7 +357,7 @@
       </div> -->
     </div>
 
-    <div class="container" id="reserveform">
+    <!-- <div class="container" id="reserveform">
       <div class="row row-content">
         <div class="col-12 col-md-9 offset-1">
           <div class="card">
@@ -483,7 +481,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div id="reserveModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="content">
@@ -733,6 +731,16 @@
           $("#carouselButton").children("span").removeClass("fa-play");
           $("#carouselButton").children("span").addClass("fa-pause");
         }
+      });
+    </script>
+    <script>
+      $("#reservebtn").on("click", function () {
+        $("#reserveModal").modal("show");
+      });
+    </script>
+    <script>
+      $("#loginbtn").on("click", function () {
+        $("#loginModal").modal("show");
       });
     </script>
   </body>
